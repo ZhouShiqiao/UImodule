@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        <!-- ActionMode右边的按钮是一个特殊的CloseButton，分割线与CloseButton的Style有关 -->
+        <!-- 删除ActionMode的Divider-->
+        <item name="android:actionModeCloseButtonStyle">@null</item>
+    </style>
+
+</resources>
