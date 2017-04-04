@@ -56,6 +56,8 @@ public class ActionModectivity extends AppCompatActivity {
                 }
                 mActionMode = startActionMode(mCallback);
                 view.setSelected(true);//表示用户可以选中它
+                int p =position+1;
+                textview.setText(p+" selected");
                 return true;
             }
         });
@@ -63,10 +65,8 @@ public class ActionModectivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (mActionMode != null) {
-                    /**
-                     * 这里添加选中后的操作，可能要更改选中后的背景颜色
-                     */
-                    textview.setText("2 selected");
+                    int p = position +1 ;
+                    textview.setText(p+" selected");
                 }
             }
         });
